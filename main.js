@@ -17,18 +17,20 @@ $(document).ready(function() {
   function displayNote(note) {
     return `
       <div class="row">
-        <div class="row">
-          <p> ${ note.title } </p>
-        </div>
-        <div class="row">
-          <p> ${ note.body } </p>
-        </div>
-        <div class="row">
-          <p> Posted by ${ usernameFor(note) } at ${ note.created_at } </p>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <p> ${ getTagNames(note.tags) } </p>
+        <div class="col-xs-12">
+          <div class="row">
+            <p> ${ note.title } </p>
+          </div>
+          <div class="row">
+            <p> ${ note.body } </p>
+          </div>
+          <div class="row">
+            <p> Posted by ${ usernameFor(note) } at ${ note.created_at } </p>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <p> ${ getTagNames(note.tags) } </p>
+            </div>
           </div>
         </div>
       </div>
