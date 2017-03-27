@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-  // apiRoot = "https://dry-shore-32365.herokuapp.com/"
-  apiRoot = "http://localhost:3000/"
+  apiRoot = "https://dry-shore-32365.herokuapp.com/"
+  // apiRoot = "http://localhost:3000/"
 
   function getTagNames(tags) {
     tagsList = tags.map(function(tag) {
