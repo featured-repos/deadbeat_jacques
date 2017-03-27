@@ -171,6 +171,7 @@ $(document).ready(function() {
     }
   }
 
+
   // create new account
   $(document).on("submit", "#signup", function(ev) {
     ev.preventDefault()
